@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-python-basic-hoxb
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-python-basic-hoxb
+    app.kubernetes.io/part-of: load-app-836e6c1b-3fc2-466b-9898-3d924c4f5699
+  name: devfile-sample-python-bas41tg
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: devfile-sample-python-basic-hoxb
+    weight: null
+status: {}
