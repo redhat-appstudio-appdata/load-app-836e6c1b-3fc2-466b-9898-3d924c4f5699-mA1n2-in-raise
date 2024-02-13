@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: load-app-836e6c1b-3fc2-466b-9898-3d924c4f5699
   name: devfile-sample-python-basic-hoxb
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
